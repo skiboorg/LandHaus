@@ -1,15 +1,16 @@
 .our-work
   margin-bottom: 200px
 .our-work-items
-  display: flex
-  flex-wrap: wrap
-  justify-content: space-between
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(320px, auto))
+  grid-gap: 1em
 
 .our-work-item-wrapper
   border-radius: 10px
   background: #fff
   padding: 8px
-  width: calc(100% / 9 * 2)
+  box-shadow: 0 0 5px rgba(0,0,0,0.5)
+  //width: calc(100% / 9 * 2)
 
 .our-work-item-inner
   display: flex

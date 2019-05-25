@@ -19,7 +19,7 @@ body
   background: linear-gradient(to bottom, #fff 0%, #fff 50%, #f5f5f5 100%)
 
 .call-order-btn
-  background: $button-bg
+  background: linear-gradient(to bottom, #ed3461 3%, #5a2f2f 100%)
   border: none
   border-radius: 30px
   padding: 20px 30px
@@ -28,10 +28,16 @@ body
   font-family: "Museo Sans Cyrl 700",sans-serif
   color: #fff
   text-transform: uppercase
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.24)
+  //text-shadow: 0 1px 0 rgba(0, 0, 0, 0.24)
+  box-shadow: 0 3px 1px #d5d5db
+  transition: all .5s
+
+  &:hover
+    box-shadow: 0 0 1px #d5d5db
+    transform: translateY(1px)
 
 .form-submit
-  background: $button-bg
+  background: linear-gradient(to bottom, #ed3461 3%, #5a2f2f 100%)
   border: none
   border-radius: 40px
   margin-top: 20px
@@ -42,7 +48,13 @@ body
   font-family: "Museo Sans Cyrl 700",sans-serif
   color: #fff
   text-transform: uppercase
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.24)
+  box-shadow: 0 3px 1px #d5d5db
+  transition: all .5s
+
+  &:hover
+    box-shadow: 0 0 1px #d5d5db
+    transform: translateY(1px)
+  //text-shadow: 0 1px 0 rgba(0, 0, 0, 0.24)
 
 input[type="text"]
   /*font: 15px/24px 'Open Sans', sans-serif;*/

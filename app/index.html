@@ -5,9 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>LandHaus</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
-
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -27,7 +24,7 @@
                 <span>8 800 111-22-33</span>
                 <span>Ежедневно 9:00-23:00</span>
             </div>
-            <button class="call-order-btn">	&#9742; заказать звонок</button>
+            <button id="header-order-btn" class="call-order-btn">	&#9742; заказать звонок</button>
         </div>
         <div class="header-offer">
             <div class="offer-text">
@@ -141,14 +138,14 @@
     </div>
     <div class="how-it-works-items container-sm">
         <div class="how-it-works-circle">
-            <p class="how-it-works-item-head color-pink">ЭТАП 1</p>
+            <p class="how-it-works-item-head color-grey">ЭТАП 1</p>
             <div class="composition">
-                <div class="circle-pink"></div>
-                <div class="dash-pink"></div>
+                <div class="circle-grey"></div>
+                <div class="dash-grey"></div>
             </div>
 
-            <p class="how-it-works-item-description">Проектирование</p>
-            <span>3-7 дней</span>
+            <p class="how-it-works-item-description color-grey">Проектирование</p>
+            <span class="how-it-works-item-time color-grey">3-7 дней</span>
 
         </div>
         <div class="how-it-works-circle">
@@ -159,7 +156,7 @@
             </div>
 
             <p class="how-it-works-item-description color-grey">Фундамент</p>
-            <span class="color-grey">3-7 дней</span>
+            <span class="how-it-works-item-time color-grey">3-7 дней</span>
 
         </div>
         <div class="how-it-works-circle">
@@ -170,7 +167,7 @@
             </div>
 
             <p class="how-it-works-item-description color-grey">Доставка</p>
-            <span class="color-grey">3-7 дней</span>
+            <span class="how-it-works-item-time color-grey">3-7 дней</span>
 
         </div>
         <div class="how-it-works-circle">
@@ -181,7 +178,7 @@
             </div>
 
             <p class="how-it-works-item-description color-grey">Монтаж</p>
-            <span class="color-grey">3-7 дней</span>
+            <span class="how-it-works-item-time color-grey">3-7 дней</span>
 
         </div>
 
@@ -211,21 +208,48 @@
                 <img src="img/logo2.png" alt="">
                 <span>Наш официальный<br>представитель</span>
             </div>
+             <div class="footer-phones">
+                            <span>8 800 111-22-33</span>
+                            <span>Ежедневно 9:00-23:00</span>
+             </div>
+        </div>
 
-        </div>
-        <div class="footer-bottom">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <div class="footer-phones">
-                <span>8 800 111-22-33</span>
-                <span>Ежедневно 9:00-23:00</span>
-            </div>
-        </div>
     </div><!-- конец контейнер-->
 
 
 
 </footer>
+<div id="myModal" class="modal">
 
+
+  <div class="modal-content">
+
+
+
+ <div class="modal-form offer-form-wrapper">
+
+                <div class="offer-form-inner">
+                    <div class="modal-header"> <h3>Узнайте точную стоимость дома</h3> <span class="close">&times;</span></div>
+
+
+                    <p>Заполните форму и мы сами перезвоним вам <span>через 15 секунд</span></p>
+
+                    <form class="header-call-back-form">
+                        <input type="text" class="custom-input" name="client-name" placeholder="Как к Вам обращаться?">
+                        <input type="text" class="custom-input" name="client-phone" placeholder="Ваш сотовый номер">
+                        <button type="submit" class="form-submit">Узнать стоимость</button>
+                        <p>Нажимая на кнопку, вы принимаете <a href="#">условия передачи данных</a></p>
+                    </form>
+                </div>
+
+
+            </div>
+
+
+  </div>
+
+</div>
+
+<script defer src="js/main.js"></script>
 </body>
 </html>
