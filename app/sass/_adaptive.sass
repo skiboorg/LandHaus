@@ -8,9 +8,17 @@
   .dash-grey
     width: 200px !important
 
+  #header-order-btn
+    display: none
+  .header-phones
+    display: none
+
 @media screen and  (max-width: 768px)
+  .header-top
+
+    margin-bottom: 40px
   .offer-text
-    flex-basis: 379px
+    flex-basis: 320px
   .how-it-works-items
     justify-content: center
 
@@ -34,8 +42,25 @@
   .feature-item
     //width: calc(100% / 12 * 4)
     //margin-bottom: 20px
+  .header-menu
+    display: none
+  .mobile-menu-button
+    display: block
+
+  #header-order-btn
+    display: none
+  .header-phones
+    display: none
 
 @media screen and  (max-width: 425px)
+  #header-order-btn
+    display: block
+    margin-bottom: 40px
+  .header-phones
+    margin-top: 40px
+    display: block
+    span
+      display: block
   .logo
     margin-bottom: 10px
     span
@@ -51,9 +76,18 @@
   .header-top
     flex-direction: column
     align-items: center
-    margin-bottom: 50px
+    //flex-direction: row
+    //align-items: end
+    margin-bottom: 10px
   .offer-text
     flex-basis: 100%
+    h1
+      display: none
+    h3
+      display: block
+      text-align: center
+    p
+      display: none
   .offer-form-wrapper
     display: none
   .modal-form
@@ -67,3 +101,15 @@
   .footer-top
     flex-direction: column
     align-items: center
+    button
+      display: none
+  .footer-location
+    display: none
+
+  .footer-middle
+    flex-direction: column
+    align-items: center
+  .how-it-works
+    display: none
+  .our-work
+    margin-bottom: 60px

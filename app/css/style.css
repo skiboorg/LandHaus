@@ -259,8 +259,9 @@ input[type="text"] {
     margin: 40px 0 120px 0; }
 
 .container-lg {
-  max-width: 1440px;
-  margin: 0 auto; }
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px; }
 
 .container-sm {
   max-width: 1050px;
@@ -269,6 +270,9 @@ input[type="text"] {
 .container-md {
   max-width: 1170px;
   margin: 0 auto; }
+
+.is-visible {
+  display: block !important; }
 
 .header-top, .logo, .header-location, .header-offer, .footer-top, .logo2, .footer-location, .footer-bottom {
   display: -webkit-box;
@@ -345,6 +349,14 @@ input[type="text"] {
 .offer-text {
   -ms-flex-preferred-size: 515px;
       flex-basis: 515px; }
+  .offer-text h3 {
+    display: none;
+    font-size: 48px;
+    font-family: "Museo Sans Cyrl 100",sans-serif;
+    margin-bottom: 50px; }
+    .offer-text h3 span {
+      font-family: 'BerlingskeSerif',sans-serif;
+      font-size: 40px; }
   .offer-text h1 {
     font-size: 48px;
     font-family: "Museo Sans Cyrl 100",sans-serif;
@@ -433,6 +445,53 @@ input[type="text"] {
     color: #000;
     text-decoration: none;
     cursor: pointer; }
+
+.header-menu nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .header-menu nav ul li {
+    margin-right: 20px;
+    font-family: "Museo Sans Cyrl 500",sans-serif;
+    font-size: 16px; }
+  .header-menu nav ul a {
+    text-decoration: none;
+    color: #000000; }
+    .header-menu nav ul a:hover {
+      text-decoration: underline; }
+
+.mobile-menu-button {
+  display: none;
+  position: absolute;
+  top: 44px;
+  left: 85%; }
+  .mobile-menu-button span {
+    font-size: 23px;
+    border: 1px solid #242424;
+    padding: 4px; }
+
+.menu-mobile-wrapper {
+  background: #ffffff;
+  padding: 5px;
+  border-radius: 5px;
+  height: 100%;
+  display: none;
+  margin-bottom: 20px; }
+
+.menu-mobile-inner {
+  border: 1px dashed #e5e5e5;
+  border-radius: 5px;
+  background: #ffffff;
+  padding: 20px; }
+  .menu-mobile-inner ul li {
+    font-family: "Museo Sans Cyrl 500",sans-serif;
+    font-size: 20px;
+    margin-bottom: 15px; }
+  .menu-mobile-inner ul a {
+    text-decoration: none;
+    color: #000000; }
+    .menu-mobile-inner ul a:hover {
+      text-decoration: underline; }
 
 .features {
   margin-bottom: 200px; }
@@ -665,12 +724,18 @@ input[type="text"] {
   .dash-pink {
     width: 200px !important; }
   .dash-grey {
-    width: 200px !important; } }
+    width: 200px !important; }
+  #header-order-btn {
+    display: none; }
+  .header-phones {
+    display: none; } }
 
 @media screen and (max-width: 768px) {
+  .header-top {
+    margin-bottom: 40px; }
   .offer-text {
-    -ms-flex-preferred-size: 379px;
-        flex-basis: 379px; }
+    -ms-flex-preferred-size: 320px;
+        flex-basis: 320px; }
   .how-it-works-items {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -688,9 +753,25 @@ input[type="text"] {
   .features {
     margin-bottom: 50px; }
   .feature-items {
-    grid-template-columns: repeat(auto-fit, minmax(500px, auto)); } }
+    grid-template-columns: repeat(auto-fit, minmax(500px, auto)); }
+  .header-menu {
+    display: none; }
+  .mobile-menu-button {
+    display: block; }
+  #header-order-btn {
+    display: none; }
+  .header-phones {
+    display: none; } }
 
 @media screen and (max-width: 425px) {
+  #header-order-btn {
+    display: block;
+    margin-bottom: 40px; }
+  .header-phones {
+    margin-top: 40px;
+    display: block; }
+    .header-phones span {
+      display: block; }
   .logo {
     margin-bottom: 10px; }
     .logo span {
@@ -711,10 +792,17 @@ input[type="text"] {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 50px; }
+    margin-bottom: 10px; }
   .offer-text {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%; }
+    .offer-text h1 {
+      display: none; }
+    .offer-text h3 {
+      display: block;
+      text-align: center; }
+    .offer-text p {
+      display: none; }
   .offer-form-wrapper {
     display: none; }
   .modal-form {
@@ -732,4 +820,20 @@ input[type="text"] {
             flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; } }
+            align-items: center; }
+    .footer-top button {
+      display: none; }
+  .footer-location {
+    display: none; }
+  .footer-middle {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .how-it-works {
+    display: none; }
+  .our-work {
+    margin-bottom: 60px; } }
